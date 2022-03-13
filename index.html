@@ -9,7 +9,6 @@
     body {
         font-family: sans-serif;
         height: 100vh;
-        height: -webkit-fill-available;
         display: flex;
         margin: 0;
     }
@@ -19,6 +18,11 @@
         margin: auto;
         font-size: 5rem;
         color: #246af0;
+    }
+    @supports (-webkit-touch-callout: none) {
+      body {
+        height: -webkit-fill-available;
+      }
     }
     </style>
 </head>
